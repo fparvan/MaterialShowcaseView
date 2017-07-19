@@ -584,6 +584,27 @@ public class MaterialShowcaseView extends FrameLayout implements View.OnTouchLis
             return this;
         }
 
+        public Builder setTitleFont(Typeface font)
+        {
+            if (showcaseView.mTitleTextView != null)
+                showcaseView.mTitleTextView.setTypeface(font);
+            return this;
+        }
+
+        public Builder setContentTextFont(Typeface font)
+        {
+            if (showcaseView.mContentTextView != null)
+                showcaseView.mContentTextView.setTypeface(font);
+            return this;
+        }
+
+        public Builder setDismissFont(Typeface font)
+        {
+            if (showcaseView.mDismissButton != null)
+                showcaseView.mDismissButton.setTypeface(font);
+            return this;
+        }
+
         /**
          * Set whether or not the target view can be touched while the showcase is visible.
          *
